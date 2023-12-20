@@ -12,8 +12,8 @@ body, html {
    height: 100%;
 } 
 .product-info {
-   height: 87%;
-   width: 65%;
+   max-height: 87%;
+   max-width: 65%;
    margin-top: 5px;
    display: flex;
    flex-direction: column;
@@ -26,8 +26,8 @@ body, html {
    background-color: #EDC7B7;
 }
 .product-info1 {
-   height: 87%;
-   width: 65%;
+   max-height: 87%;
+   max-width: 65%;
    margin-top: 5px;
    display: flex;
    flex-direction: column;
@@ -47,7 +47,8 @@ body, html {
 }
 .product-image {
    margin-top: 10px;
-   max-width: 300px;
+   max-width: 70%;
+   max-height: 70%;
    border-radius: 60px;
    margin-bottom: 15px;
 }
