@@ -1,0 +1,134 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #EEE2DC;
+ }
+ .mb {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+ }
+.mdiv {
+    display: grid; 
+ 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    gap: 0px;
+    height: 100%;
+    
+ }
+ #imgg{
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-column-end: 2;
+    display: flex;
+    justify-content: center;
+    
+ }
+ #name {
+    margin-top: 15px;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 5;
+    margin-top: 40px;
+    display: flex;
+    justify-content: left;
+    color: #123C69;
+    font-size: 65px;
+    font-family: 'Didot', serif;
+ }
+ 
+ #opis {
+    
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 4;
+    grid-column-end: 5;
+    display: flex;
+    margin-right: 5px;
+    justify-content: left;
+    color: #123C69;
+    font-size: 40px;
+    font-family: 'Didot', serif;
+ }
+ #forma {
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-row-end: 9;
+    grid-column-end: 5;
+    display: flex;
+    justify-content: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    padding-left: 90px;
+    color: #123C69;
+ }
+
+ #forma input{
+    height: 40px;
+    margin-bottom: 5px;
+ }
+ #forma select{
+    height: 40px;
+    margin-bottom: 5px;
+ }
+ #forma button{
+    height: 40px;
+    margin-bottom: 5px;
+ }
+ .mimg{
+    margin-top: 30px;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 40px;
+ }
+ #menu {
+    font-size: 30px;
+    background-color: #BAB2B5;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 10px;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    white-space: nowrap;
+    transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+ }
+ 
+ #menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+ }
+ 
+ #menu ul li {
+    margin-bottom: 10px;
+ }
+ 
+ #menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+ }
+ 
+ #menu.hidden {
+    width: 0;
+    overflow: hidden;
+ }
+ #menu.menu-visible {
+    width: 14%; 
+    opacity: 1;
+    visibility: visible;
+ }
+ 

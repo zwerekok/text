@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="buy.css">
+    <link rel="shortcut icon" href="/icon.ico" type="image/x-icon">
+    <title>Текстиль</title>
+</head>
+<body>
+    <button class="mb" onclick="comenu()"><img src="men.png" ></button>
+    <div id="menu" class="hidden">
+        <button class="mb" onclick="comenu()"><img src="men.png" ></button>
+        <ul>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="index.html">Товары</a></li>
+            <li><a href="buy.html?index=0">Заказ</a></li>
+        </ul>
+    </div>
+    <div class="mdiv">
+        <div id="imgg">
+            <img src="shek.jpg"  class="mimg">
+        </div>
+        <div id="name"></div>
+        <div id="opis"></div>
+        <div id="forma">
+            <form">
+                <label for="fullname">ФИО:</label>
+                <input type="text" id="fullname" name="fullname" required>
+                <br>        
+                <label for="phone">Номер телефона:</label>
+                <input type="tel" id="phone" name="phone"  placeholder="+79999999999" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="delivery-method">Способ доставки:</label>
+                <select id="delivery-method" name="delivery-method">
+                    <option value="courier">Курьер</option>
+                    <option value="pickup">Самовывоз</option>
+                </select>
+                <br>
+                <label for="payment-method">Способ оплаты:</label>
+                <select id="payment-method" name="payment-method">
+                    <option value="credit-card">Кредитная карта</option>
+                    <option value="cash">Наличные</option>
+                </select>
+                <br>
+                <button id='btn' type="submit">Отправить данные</button>
+            </form>
+        </div>
+    </div>
+    <script src="buy.js"></script>
+</body>
